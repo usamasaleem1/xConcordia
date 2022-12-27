@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
         }
         if (int.parse(webOccupancy) > 100) {
           webLevel = 'High';
-        } else if (int.parse(webOccupancy) > 50 &&
+        } else if (int.parse(webOccupancy) > 75 &&
             int.parse(webOccupancy) < 100) {
           webLevel = 'Medium';
         } else {
