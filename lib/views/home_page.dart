@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage> {
       String? occupancy = await getDataAPI().getPosts();
       setState(() {
         webOccupancy = occupancy!.substring(0, occupancy.length - 5);
-        if (webOccupancy == '') {
+        if (webOccupancy == '' || int.parse(webOccupancy) < 0) {
           webOccupancy = '0';
         }
         if (int.parse(webOccupancy) > 100) {
@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage> {
       String? occupancy = await getDataAPI_G().getPosts();
       setState(() {
         greyOccupancy = occupancy!.substring(0, occupancy.length - 5);
-        if (greyOccupancy == '') {
+        if (greyOccupancy == '' || int.parse(greyOccupancy) < 0) {
           greyOccupancy = '0';
         }
         if (int.parse(greyOccupancy) > 100) {
@@ -89,7 +89,7 @@ class _HomePageState extends State<HomePage> {
       String? occupancy = await getDataAPI_V().getPosts();
       setState(() {
         vannierOccupancy = occupancy!.substring(0, occupancy.length - 5);
-        if (vannierOccupancy == '') {
+        if (vannierOccupancy == '' || int.parse(vannierOccupancy) < 0) {
           vannierOccupancy = '0';
         }
         if (int.parse(vannierOccupancy) > 100) {
