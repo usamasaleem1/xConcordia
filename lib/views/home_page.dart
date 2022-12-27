@@ -147,7 +147,8 @@ class _HomePageState extends State<HomePage> {
               margin: const EdgeInsets.only(top: 20),
               child: Column(
                 children: [
-                  const LibraryStatsHeader(),
+                  // ignore: prefer_const_constructors
+                  LibraryStatsHeader(), //LibraryStatsHeader widget is in a file called libraryStatsHeader
                   const Padding(padding: EdgeInsets.all(10)),
                   libCards(), //libCards widget is in a file called libraryCards
                 ],
