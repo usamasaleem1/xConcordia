@@ -1,5 +1,7 @@
 import 'package:xconcordia/services/remote_service.dart';
 import 'package:flutter/material.dart';
+import '../widgets/libraryCards.dart';
+import '../widgets/libraryStatsHeader.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -18,7 +20,7 @@ String greyLevel = '';
 String vannierLevel = '';
 
 class _HomePageState extends State<HomePage> {
-  bool isLoading = false;
+  bool isLoading = true;
 
   @override
   void initState() {
@@ -148,222 +150,13 @@ class _HomePageState extends State<HomePage> {
               margin: const EdgeInsets.only(top: 20),
               child: Column(
                 children: [
-                  Column(
-                    // the title "Library Stats", and the last updated time, and live count text
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Container(
-                            alignment: Alignment.centerLeft,
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 20, vertical: 10),
-                            child: const Text(
-                              'Library Stats',
-                              style: TextStyle(
-                                fontSize: 26,
-                                fontWeight: FontWeight.w800,
-                                color: Color.fromARGB(255, 55, 55, 55),
-                              ),
-                            ),
-                          ),
-                          Text(
-                            'Last Updated: ' + libTime,
-                            style: const TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          Container(
-                            alignment: Alignment.centerLeft,
-                            padding: const EdgeInsets.symmetric(horizontal: 20),
-                            child: const Text(
-                              'Live count of the number of people',
-                              style: TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.w400,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                  const Padding(
-                      padding: EdgeInsets.all(
-                          10)), //the webster, grey, vannier square cards
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            const Text(
-                              'Webster',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                            Text(
-                              webOccupancy,
-                              textAlign: TextAlign.center,
-                              style: const TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                                color: Color.fromARGB(255, 255, 255, 255),
-                              ),
-                            ),
-                            Text(
-                              webLevel,
-                              textAlign: TextAlign.center,
-                              style: const TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                                color: Color.fromARGB(170, 255, 255, 255),
-                              ),
-                            ),
-                          ],
-                        ),
-                        height: height,
-                        width: width,
-                        decoration: BoxDecoration(
-                          boxShadow: const [
-                            BoxShadow(
-                              color: Color.fromARGB(109, 255, 88, 11),
-                              offset: Offset(0, 5),
-                              blurRadius: 15,
-                            ),
-                          ],
-                          borderRadius: BorderRadius.circular(cornerRadius),
-                          gradient: const LinearGradient(
-                            colors: [
-                              Color.fromARGB(255, 252, 151, 0),
-                              Color.fromARGB(255, 245, 67, 55),
-                            ],
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                          ),
-                        ),
-                      ),
-                      Container(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            const Text(
-                              'Grey Nuns',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                            Text(
-                              greyOccupancy,
-                              textAlign: TextAlign.center,
-                              style: const TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                            Text(
-                              greyLevel,
-                              textAlign: TextAlign.center,
-                              style: const TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                                color: Color.fromARGB(170, 255, 255, 255),
-                              ),
-                            ),
-                          ],
-                        ),
-                        height: height,
-                        width: width,
-                        decoration: BoxDecoration(
-                          boxShadow: const [
-                            BoxShadow(
-                              color: Color.fromARGB(120, 2, 83, 141),
-                              offset: Offset(0, 5),
-                              blurRadius: 15,
-                            ),
-                          ],
-                          borderRadius: BorderRadius.circular(cornerRadius),
-                          gradient: const LinearGradient(
-                            colors: [
-                              Color.fromARGB(255, 18, 179, 200),
-                              Color.fromARGB(255, 0, 95, 136),
-                            ],
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                          ),
-                        ),
-                      ),
-                      Container(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            const Text(
-                              'Vanier',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                            Text(
-                              vannierOccupancy,
-                              textAlign: TextAlign.center,
-                              style: const TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                            Text(
-                              vannierLevel,
-                              textAlign: TextAlign.center,
-                              style: const TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                                color: Color.fromARGB(170, 255, 255, 255),
-                              ),
-                            ),
-                          ],
-                        ),
-                        height: height,
-                        width: width,
-                        decoration: BoxDecoration(
-                          boxShadow: const [
-                            BoxShadow(
-                              color: Color.fromARGB(123, 20, 175, 64),
-                              offset: Offset(0, 5),
-                              blurRadius: 15,
-                            ),
-                          ],
-                          borderRadius: BorderRadius.circular(cornerRadius),
-                          gradient: const LinearGradient(
-                            colors: [
-                              Color.fromARGB(255, 25, 207, 159),
-                              Color.fromARGB(255, 33, 147, 57)
-                            ],
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
+                  const LibraryStatsHeader(),
+                  const Padding(padding: EdgeInsets.all(10)),
+                  libCards(
+                      height: height,
+                      width: width,
+                      cornerRadius:
+                          cornerRadius), //libCards widget is in a file called libraryCards
                 ],
               ),
             ),
