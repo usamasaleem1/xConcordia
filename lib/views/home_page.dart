@@ -149,6 +149,7 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                 children: [
                   Column(
+                    // the title "Library Stats", and the last updated time, and live count text
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -192,7 +193,9 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ],
                   ),
-                  const Padding(padding: EdgeInsets.all(10)),
+                  const Padding(
+                      padding: EdgeInsets.all(
+                          10)), //the webster, grey, vannier square cards
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.center,
