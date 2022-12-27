@@ -12,35 +12,41 @@ class LibraryStatsHeader extends StatelessWidget {
     return Column(
       // the title "Library Stats", and the last updated time, and live count text
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Container(
-              alignment: Alignment.centerLeft,
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-              child: const Text(
-                'Library Stats',
-                style: TextStyle(
-                  fontSize: 26,
-                  fontWeight: FontWeight.w800,
-                  color: Color.fromARGB(255, 55, 55, 55),
+        Container(
+          padding: const EdgeInsets.only(top: 10),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Container(
+                alignment: Alignment.centerLeft,
+                padding: const EdgeInsets.only(left: 20),
+                child: const Text(
+                  'Library Stats',
+                  style: TextStyle(
+                    fontSize: 26,
+                    fontWeight: FontWeight.w800,
+                    color: Color.fromARGB(255, 55, 55, 55),
+                  ),
                 ),
               ),
-            ),
-            Text(
-              'Last Updated: ' + libTime,
-              style: const TextStyle(
-                fontSize: 12,
-                fontWeight: FontWeight.w400,
+              Container(
+                padding: const EdgeInsets.only(left: 15),
+                child: Text(
+                  'Last Updated: ' + libTime,
+                  style: const TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
         Row(
           children: [
             Container(
               alignment: Alignment.centerLeft,
-              padding: const EdgeInsets.symmetric(horizontal: 20),
+              padding: const EdgeInsets.only(left: 20, top: 5),
               child: const Text(
                 'Live count of the number of people',
                 style: TextStyle(

@@ -1,5 +1,6 @@
 import 'package:xconcordia/services/remote_service.dart';
 import 'package:flutter/material.dart';
+import 'package:xconcordia/widgets/categoryPicker.dart';
 import '../widgets/libraryCards.dart';
 import '../widgets/libraryStatsHeader.dart';
 
@@ -151,6 +152,7 @@ class _HomePageState extends State<HomePage> {
                   LibraryStatsHeader(), //LibraryStatsHeader widget is in a file called libraryStatsHeader
                   const Padding(padding: EdgeInsets.all(10)),
                   libCards(), //libCards widget is in a file called libraryCards
+                  const categoryPicker(),
                 ],
               ),
             ),
