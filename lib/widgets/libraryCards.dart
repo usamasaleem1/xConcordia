@@ -2,16 +2,9 @@ import '../views/home_page.dart';
 import 'package:flutter/material.dart';
 
 class libCards extends StatelessWidget {
-  const libCards({
-    Key? key,
-    required this.height,
-    required this.width,
-    required this.cornerRadius,
-  }) : super(key: key);
-
-  final double height;
-  final double width;
-  final double cornerRadius;
+  double height = 140;
+  double width = 115;
+  double cornerRadius = 35;
 
   @override
   Widget build(BuildContext context) {

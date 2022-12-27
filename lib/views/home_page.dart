@@ -108,9 +108,6 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
-  double height = 115;
-  double width = 115;
-  double cornerRadius = 30;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -152,11 +149,7 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   const LibraryStatsHeader(),
                   const Padding(padding: EdgeInsets.all(10)),
-                  libCards(
-                      height: height,
-                      width: width,
-                      cornerRadius:
-                          cornerRadius), //libCards widget is in a file called libraryCards
+                  libCards(), //libCards widget is in a file called libraryCards
                 ],
               ),
             ),
