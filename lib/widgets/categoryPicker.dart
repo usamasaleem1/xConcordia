@@ -35,7 +35,7 @@ class categoryPicker extends StatelessWidget {
           children: [
             Container(
               alignment: Alignment.centerLeft,
-              padding: const EdgeInsets.only(left: 20, top: 5),
+              padding: const EdgeInsets.only(left: 20, top: 5, bottom: 4),
               child: const Text(
                 'Bored on break? Join a random class!',
                 style: TextStyle(
