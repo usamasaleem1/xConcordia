@@ -30,8 +30,8 @@ class libCards extends StatelessWidget {
                 webOccupancy,
                 textAlign: TextAlign.center,
                 style: const TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
+                  fontSize: 30,
+                  fontWeight: FontWeight.w300,
                   color: Color.fromARGB(255, 255, 255, 255),
                 ),
               ),
@@ -84,8 +84,8 @@ class libCards extends StatelessWidget {
                 greyOccupancy,
                 textAlign: TextAlign.center,
                 style: const TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
+                  fontSize: 30,
+                  fontWeight: FontWeight.w300,
                   color: Colors.white,
                 ),
               ),
@@ -138,8 +138,8 @@ class libCards extends StatelessWidget {
                 vannierOccupancy,
                 textAlign: TextAlign.center,
                 style: const TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
+                  fontSize: 30,
+                  fontWeight: FontWeight.w300,
                   color: Colors.white,
                 ),
               ),
