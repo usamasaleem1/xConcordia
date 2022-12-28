@@ -25,7 +25,7 @@ class categoryPicker extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 26,
                     fontWeight: FontWeight.w800,
-                    color: Color.fromARGB(255, 55, 55, 55),
+                    color: Color.fromARGB(255, 103, 103, 103),
                   ),
                 ),
               ),
@@ -132,6 +132,22 @@ class categoryPicker extends StatelessWidget {
               ],
             ),
           ),
+        ),
+        Row(
+          children: [
+            Container(
+              alignment: Alignment.centerLeft,
+              padding: const EdgeInsets.only(left: 20, top: 10),
+              child: const Text(
+                'Feature Coming Soon.',
+                style: TextStyle(
+                  fontSize: 26,
+                  color: Colors.blue,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
+          ],
         ),
       ],
     );

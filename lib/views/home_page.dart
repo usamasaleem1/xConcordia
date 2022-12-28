@@ -123,7 +123,7 @@ class _HomePageState extends State<HomePage> {
         //   onPressed: () {},
         // ),
 
-        title: const Text('X Concordia'),
+        title: const Text('xConcordia'),
         flexibleSpace: Container(
           decoration: const BoxDecoration(
             boxShadow: [
