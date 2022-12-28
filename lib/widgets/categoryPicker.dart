@@ -56,8 +56,6 @@ class categoryPicker extends StatelessWidget {
                 child: OutlinedButton(
                   onPressed: null,
                   style: ButtonStyle(
-                    overlayColor: MaterialStateProperty.all(
-                        const Color.fromARGB(255, 147, 0, 0)),
                     shape: MaterialStateProperty.all(RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30.0))),
                   ),
@@ -118,6 +116,7 @@ class categoryPicker extends StatelessWidget {
                 child: OutlinedButton(
                   onPressed: null,
                   style: ButtonStyle(
+                    overlayColor: MaterialStateProperty.all(Colors.transparent),
                     shape: MaterialStateProperty.all(RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10.0))),
                   ),
