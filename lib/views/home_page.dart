@@ -11,7 +11,6 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
-int numApiCalls = 0;
 var webb = '';
 String webOccupancy = '';
 String greyOccupancy = '';
@@ -33,16 +32,12 @@ class _HomePageState extends State<HomePage> {
     _fetchLibTime();
   }
 
-  Future<void> _fetchAPIdata() async {
-    await getDataAPI().getPosts();
-  }
-
   Future<void> _fetchLibTime() async {
     if (libTime == '') {
-      libTime = await getLibraryTime();
+      String? libraryTime = await getDataAPI_time().getPosts();
       setState(() {
-        libTime = libTime.toString();
-        print("web occ1: " + libTime.toString());
+        libTime = libraryTime.toString();
+        print("web occ1: " + libraryTime.toString());
       });
     }
   }
@@ -50,7 +45,6 @@ class _HomePageState extends State<HomePage> {
   Future<void> _fetchWebOccupancy() async {
     if (webOccupancy == '') {
       String? occupancy = await getDataAPI().getPosts();
-      occupancy = getWebsterOccupancy();
       setState(() {
         webOccupancy = occupancy!.substring(0, occupancy.length - 5);
         if (webOccupancy == '' || int.parse(webOccupancy) < 0) {
@@ -66,15 +60,13 @@ class _HomePageState extends State<HomePage> {
         }
         isLoading = false;
         print("web occ1: " + webOccupancy.toString());
-        print("Number of API Calls: " + numApiCalls.toString());
       });
     }
   }
 
   Future<void> _fetchGreyOccupancy() async {
     if (greyOccupancy == '') {
-      String? occupancy = await getDataAPI().getPosts();
-      occupancy = getGreyOccupancy();
+      String? occupancy = await getDataAPI_G().getPosts();
       setState(() {
         greyOccupancy = occupancy!.substring(0, occupancy.length - 5);
         if (greyOccupancy == '' || int.parse(greyOccupancy) < 0) {
@@ -97,8 +89,7 @@ class _HomePageState extends State<HomePage> {
 
   Future<void> _fetchVannierOccupancy() async {
     if (vannierOccupancy == '') {
-      String? occupancy = await getDataAPI().getPosts();
-      occupancy = getVannierOccupancy();
+      String? occupancy = await getDataAPI_V().getPosts();
       setState(() {
         vannierOccupancy = occupancy!.substring(0, occupancy.length - 5);
         if (vannierOccupancy == '' || int.parse(vannierOccupancy) < 0) {
