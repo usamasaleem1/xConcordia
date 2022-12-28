@@ -1,5 +1,7 @@
+import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:xconcordia/services/remote_service.dart';
 import 'package:flutter/material.dart';
+import 'package:xconcordia/views/secondScreen.dart';
 import 'package:xconcordia/widgets/categoryPicker.dart';
 import '../widgets/libraryCards.dart';
 import '../widgets/libraryStatsHeader.dart';
@@ -22,7 +24,13 @@ String vannierLevel = '';
 
 class _HomePageState extends State<HomePage> {
   bool isLoading = true;
+  int currentIndex = 0;
 
+  // List of pages
+  List<Widget> pages = [
+    const HomePage(),
+    const SecondRoute(),
+  ];
   @override
   void initState() {
     super.initState();
@@ -37,7 +45,6 @@ class _HomePageState extends State<HomePage> {
       String? libraryTime = await getDataAPI_time().getPosts();
       setState(() {
         libTime = libraryTime.toString();
-        print("web occ1: " + libraryTime.toString());
       });
     }
   }
@@ -59,7 +66,6 @@ class _HomePageState extends State<HomePage> {
           webLevel = 'Low';
         }
         isLoading = false;
-        print("web occ1: " + webOccupancy.toString());
       });
     }
   }
@@ -81,8 +87,6 @@ class _HomePageState extends State<HomePage> {
           greyLevel = 'Low';
         }
         isLoading = false;
-        print(occupancy.runtimeType);
-        print("grey occ1: " + greyOccupancy.toString());
       });
     }
   }
@@ -104,7 +108,6 @@ class _HomePageState extends State<HomePage> {
           vannierLevel = 'Low';
         }
         isLoading = false;
-        print("vannier occ1: " + vannierOccupancy.toString());
       });
     }
   }
@@ -152,33 +155,32 @@ class _HomePageState extends State<HomePage> {
                   LibraryStatsHeader(), //LibraryStatsHeader widget is in a file called libraryStatsHeader
                   const Padding(padding: EdgeInsets.all(10)),
                   libCards(), //libCards widget is in a file called libraryCards
-                  const categoryPicker(),
+                  const categoryPicker(), //category picker
                 ],
               ),
             ),
-      bottomNavigationBar: BottomAppBar(
-        color: Colors.transparent,
-        elevation: 0,
-        child: SizedBox(
-          height: 50,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              IconButton(
-                icon: const Icon(Icons.home),
-                onPressed: () {},
-              ),
-              IconButton(
-                icon: const Icon(Icons.search),
-                onPressed: () {},
-              ),
-              IconButton(
-                icon: const Icon(Icons.settings),
-                onPressed: () {},
-              ),
-            ],
+      bottomNavigationBar: BottomNavyBar(
+        selectedIndex: currentIndex,
+        onItemSelected: (index) {
+          setState(() {
+            currentIndex = index;
+          });
+          // Push the new page onto the navigation stack
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => pages[index]),
+          );
+        },
+        items: <BottomNavyBarItem>[
+          BottomNavyBarItem(
+            icon: const Icon(Icons.home),
+            title: const Text('Home'),
           ),
-        ),
+          BottomNavyBarItem(
+            icon: const Icon(Icons.circle_notifications),
+            title: const Text('Notification'),
+          ),
+        ],
       ),
     );
   }

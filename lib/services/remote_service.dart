@@ -22,7 +22,6 @@ class getDataAPI {
       String json = await response.stream.bytesToString();
       // ignore: await_only_futures
       Libraries library = await librariesFromJson(json);
-      print("webster: " + library.webster.occupancy);
       return library.webster.occupancy;
     } else {
       print(response.statusCode);
@@ -49,7 +48,6 @@ class getDataAPI_V {
       String json = await response.stream.bytesToString();
       // ignore: await_only_futures
       Libraries library = await librariesFromJson(json);
-      print("vannier: " + library.vanier.occupancy);
       return library.vanier.occupancy;
     } else {
       print(response.statusCode);
@@ -76,7 +74,6 @@ class getDataAPI_G {
       String json = await response.stream.bytesToString();
       // ignore: await_only_futures
       Libraries library = await librariesFromJson(json);
-      print("greynuns: " + library.greyNuns.occupancy);
       return library.greyNuns.occupancy;
     } else {
       print(response.statusCode);
@@ -104,7 +101,6 @@ class getDataAPI_time {
       // ignore: await_only_futures
       Libraries library = await librariesFromJson(json);
       final DateFormat formatter = DateFormat('jm');
-      print("time: " + formatter.format(library.vanier.lastRecordTime));
       return formatter.format(library.vanier.lastRecordTime);
     } else {
       print(response.statusCode);

@@ -1,6 +1,7 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class categoryPicker extends StatelessWidget {
   const categoryPicker({
     Key? key,
@@ -48,82 +49,86 @@ class categoryPicker extends StatelessWidget {
         ),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
-          child: Row(
-            children: [
-              Container(
-                alignment: Alignment.centerLeft,
-                padding: const EdgeInsets.only(left: 20, top: 5),
-                child: OutlinedButton(
-                  onPressed: null,
-                  style: ButtonStyle(
-                    shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30.0))),
+          child: Container(
+            padding: const EdgeInsets.only(right: 20),
+            child: Row(
+              children: [
+                Container(
+                  alignment: Alignment.centerLeft,
+                  padding: const EdgeInsets.only(left: 20, top: 5),
+                  child: OutlinedButton(
+                    onPressed: null,
+                    style: ButtonStyle(
+                      shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30.0))),
+                    ),
+                    child: const Text("🧪 Science"),
                   ),
-                  child: const Text("🧪 Science"),
                 ),
-              ),
-              Container(
-                alignment: Alignment.centerLeft,
-                padding: const EdgeInsets.only(left: 10, top: 5),
-                child: OutlinedButton(
-                  onPressed: null,
-                  style: ButtonStyle(
-                    shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30.0))),
+                Container(
+                  alignment: Alignment.centerLeft,
+                  padding: const EdgeInsets.only(left: 10, top: 5),
+                  child: OutlinedButton(
+                    onPressed: null,
+                    style: ButtonStyle(
+                      shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30.0))),
+                    ),
+                    child: const Text("💻 Coding"),
                   ),
-                  child: const Text("💻 Coding"),
                 ),
-              ),
-              Container(
-                alignment: Alignment.centerLeft,
-                padding: const EdgeInsets.only(left: 10, top: 5),
-                child: OutlinedButton(
-                  onPressed: null,
-                  style: ButtonStyle(
-                    shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30.0))),
+                Container(
+                  alignment: Alignment.centerLeft,
+                  padding: const EdgeInsets.only(left: 10, top: 5),
+                  child: OutlinedButton(
+                    onPressed: null,
+                    style: ButtonStyle(
+                      shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30.0))),
+                    ),
+                    child: const Text("🎨 Art"),
                   ),
-                  child: const Text("🎨 Art"),
                 ),
-              ),
-              Container(
-                alignment: Alignment.centerLeft,
-                padding: const EdgeInsets.only(left: 10, top: 5),
-                child: OutlinedButton(
-                  onPressed: null,
-                  style: ButtonStyle(
-                    shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30.0))),
+                Container(
+                  alignment: Alignment.centerLeft,
+                  padding: const EdgeInsets.only(left: 10, top: 5),
+                  child: OutlinedButton(
+                    onPressed: null,
+                    style: ButtonStyle(
+                      shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30.0))),
+                    ),
+                    child: const Text("🎵 Music"),
                   ),
-                  child: const Text("🎵 Music"),
                 ),
-              ),
-              Container(
-                alignment: Alignment.centerLeft,
-                padding: const EdgeInsets.only(left: 10, top: 5),
-                child: OutlinedButton(
-                  onPressed: null,
-                  style: ButtonStyle(
-                    shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30.0))),
+                Container(
+                  alignment: Alignment.centerLeft,
+                  padding: const EdgeInsets.only(left: 10, top: 5),
+                  child: OutlinedButton(
+                    onPressed: null,
+                    style: ButtonStyle(
+                      shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30.0))),
+                    ),
+                    child: const Text("📜 History"),
                   ),
-                  child: const Text("📜 History"),
                 ),
-              ),
-              Container(
-                alignment: Alignment.centerLeft,
-                padding: const EdgeInsets.only(left: 10, top: 5),
-                child: OutlinedButton(
-                  onPressed: null,
-                  style: ButtonStyle(
-                    overlayColor: MaterialStateProperty.all(Colors.transparent),
-                    shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0))),
+                Container(
+                  alignment: Alignment.centerLeft,
+                  padding: const EdgeInsets.only(left: 10, top: 5),
+                  child: OutlinedButton(
+                    onPressed: null,
+                    style: ButtonStyle(
+                      overlayColor:
+                          MaterialStateProperty.all(Colors.transparent),
+                      shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0))),
+                    ),
+                    child: const Text("🦄 Request a Category"),
                   ),
-                  child: const Text("🦄 Request a Category"),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ],
