@@ -31,7 +31,7 @@ class libCards extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontSize: 30,
-                  fontWeight: FontWeight.w300,
+                  fontWeight: FontWeight.w200,
                   color: Color.fromARGB(255, 255, 255, 255),
                 ),
               ),
@@ -85,7 +85,7 @@ class libCards extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontSize: 30,
-                  fontWeight: FontWeight.w300,
+                  fontWeight: FontWeight.w200,
                   color: Colors.white,
                 ),
               ),
@@ -139,7 +139,7 @@ class libCards extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontSize: 30,
-                  fontWeight: FontWeight.w300,
+                  fontWeight: FontWeight.w200,
                   color: Colors.white,
                 ),
               ),
