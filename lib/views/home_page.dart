@@ -160,25 +160,45 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
       bottomNavigationBar: BottomNavyBar(
+        animationDuration: const Duration(milliseconds: 200),
+        curve: Curves.ease,
+        showElevation: false,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         selectedIndex: currentIndex,
         onItemSelected: (index) {
           setState(() {
             currentIndex = index;
           });
           // Push the new page onto the navigation stack
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => pages[index]),
-          );
+          // Navigator.push(
+          //   context,
+          //   MaterialPageRoute(builder: (context) => pages[index]),
+          // );
         },
         items: <BottomNavyBarItem>[
           BottomNavyBarItem(
+            activeColor: Colors.lightBlue,
+            textAlign: TextAlign.center,
             icon: const Icon(Icons.home),
             title: const Text('Home'),
           ),
           BottomNavyBarItem(
-            icon: const Icon(Icons.circle_notifications),
-            title: const Text('Notification'),
+            activeColor: Colors.lightBlue,
+            textAlign: TextAlign.center,
+            icon: const Icon(Icons.discord),
+            title: const Text('Discords'),
+          ),
+          BottomNavyBarItem(
+            activeColor: Colors.lightBlue,
+            textAlign: TextAlign.center,
+            icon: const Icon(Icons.school),
+            title: const Text('Examotron'),
+          ),
+          BottomNavyBarItem(
+            activeColor: Colors.lightBlue,
+            textAlign: TextAlign.center,
+            icon: const Icon(Icons.document_scanner),
+            title: const Text('Notes'),
           ),
         ],
       ),

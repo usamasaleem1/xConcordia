@@ -57,7 +57,9 @@ class categoryPicker extends StatelessWidget {
                   alignment: Alignment.centerLeft,
                   padding: const EdgeInsets.only(left: 20, top: 5),
                   child: OutlinedButton(
-                    onPressed: null,
+                    onPressed: () {
+                      //yo here
+                    },
                     style: ButtonStyle(
                       shape: MaterialStateProperty.all(RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30.0))),
@@ -69,7 +71,7 @@ class categoryPicker extends StatelessWidget {
                   alignment: Alignment.centerLeft,
                   padding: const EdgeInsets.only(left: 10, top: 5),
                   child: OutlinedButton(
-                    onPressed: null,
+                    onPressed: () {},
                     style: ButtonStyle(
                       shape: MaterialStateProperty.all(RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30.0))),
