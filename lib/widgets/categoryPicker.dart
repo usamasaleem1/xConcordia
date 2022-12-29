@@ -23,7 +23,7 @@ class categoryPicker extends StatelessWidget {
                 alignment: Alignment.centerLeft,
                 padding: const EdgeInsets.only(left: 20),
                 child: const Text(
-                  'Crash a Class',
+                  'Crash a Class 📖',
                   style: TextStyle(
                     fontSize: 26,
                     fontWeight: FontWeight.w800,

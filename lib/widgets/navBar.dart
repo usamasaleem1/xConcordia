@@ -1,7 +1,6 @@
 // ignore: file_names
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:xconcordia/views/examotronPage.dart';
 import 'package:xconcordia/views/notesPage.dart';
 
 import '../views/home_page.dart';
@@ -21,7 +20,6 @@ class _navBarState extends State<navBar> {
   final screens = [
     const HomePage(),
     const DiscordPage(),
-    const ExamotronPage(),
     const notesPage(),
   ];
 
@@ -77,28 +75,28 @@ class _navBarState extends State<navBar> {
             activeColor: const Color.fromARGB(255, 5, 176, 255),
             textAlign: TextAlign.center,
             icon: const Icon(Icons.home),
-            title: const Text('Home'),
+            title: const Text('Library'),
           ),
           BottomNavyBarItem(
             inactiveColor: const Color.fromARGB(255, 20, 143, 199),
             activeColor: const Color.fromARGB(255, 5, 176, 255),
             textAlign: TextAlign.center,
             icon: const Icon(Icons.discord),
-            title: const Text('Discord'),
+            title: const Text('Social'),
           ),
-          BottomNavyBarItem(
-            inactiveColor: const Color.fromARGB(255, 20, 143, 199),
-            activeColor: const Color.fromARGB(255, 5, 176, 255),
-            textAlign: TextAlign.center,
-            icon: const Icon(Icons.school),
-            title: const Text('Examotron'),
-          ),
+          // BottomNavyBarItem(
+          //   inactiveColor: const Color.fromARGB(255, 20, 143, 199),
+          //   activeColor: const Color.fromARGB(255, 5, 176, 255),
+          //   textAlign: TextAlign.center,
+          //   icon: const Icon(Icons.school),
+          //   title: const Text('Examotron'),
+          // ),
           BottomNavyBarItem(
             inactiveColor: const Color.fromARGB(255, 20, 143, 199),
             activeColor: const Color.fromARGB(255, 5, 176, 255),
             textAlign: TextAlign.center,
             icon: const Icon(Icons.document_scanner),
-            title: const Text('Notes'),
+            title: const Text('Links'),
           ),
         ],
       ),

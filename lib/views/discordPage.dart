@@ -8,6 +8,7 @@ class DiscordPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
+        padding: const EdgeInsets.only(left: 10, bottom: 20),
         child: Column(
           children: [
             Container(
@@ -20,9 +21,9 @@ class DiscordPage extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     padding: const EdgeInsets.only(left: 20),
                     child: const Text(
-                      '🤝🏼 Find People',
+                      '🤝🏼 General',
                       style: TextStyle(
-                        fontSize: 26,
+                        fontSize: 22,
                         fontWeight: FontWeight.w800,
                         color: Color.fromARGB(255, 33, 36, 39),
                       ),
@@ -64,7 +65,7 @@ class DiscordPage extends StatelessWidget {
                                   side: const BorderSide(color: Colors.red)))),
                       onPressed: () async {
                         // Open the link in the browser
-                        Uri url = Uri.parse('https://www.concordia.ca/');
+                        Uri url = Uri.parse('https://discord.gg/concoengrcs');
                         if (await canLaunchUrl(url)) {
                           await launchUrl(url);
                         } else {
@@ -90,14 +91,14 @@ class DiscordPage extends StatelessWidget {
                                   side: const BorderSide(color: Colors.red)))),
                       onPressed: () async {
                         // Open the link in the browser
-                        Uri url = Uri.parse('https://www.concordia.ca/');
+                        Uri url = Uri.parse('https://discord.gg/tEPXBXkqzc');
                         if (await canLaunchUrl(url)) {
                           await launchUrl(url);
                         } else {
                           throw 'Could not launch $url';
                         }
                       },
-                      child: const Text('Student Hub - ConU'),
+                      child: const Text('ConU Hub Discord'),
                     ),
                   ),
                 ],
@@ -108,9 +109,9 @@ class DiscordPage extends StatelessWidget {
               alignment: Alignment.centerLeft,
               padding: const EdgeInsets.only(left: 20, top: 10),
               child: const Text(
-                '☠️ Rogue Discords',
+                '☠️ Department and Faculty Discords',
                 style: TextStyle(
-                  fontSize: 26,
+                  fontSize: 16,
                   fontWeight: FontWeight.w800,
                   color: Color.fromARGB(255, 33, 36, 39),
                 ),

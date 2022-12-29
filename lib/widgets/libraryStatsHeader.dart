@@ -21,7 +21,7 @@ class LibraryStatsHeader extends StatelessWidget {
                 alignment: Alignment.centerLeft,
                 padding: const EdgeInsets.only(left: 20),
                 child: const Text(
-                  'Library Stats',
+                  'Library Stats 👥',
                   style: TextStyle(
                     fontSize: 26,
                     fontWeight: FontWeight.w800,

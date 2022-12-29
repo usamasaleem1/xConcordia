@@ -118,7 +118,8 @@ class _HomePageState extends State<HomePage> {
               color: Color.fromARGB(162, 114, 68, 251),
             ))
           : Container(
-              margin: const EdgeInsets.only(top: 20),
+              padding: const EdgeInsets.only(left: 0),
+              margin: const EdgeInsets.only(top: 20, left: 5, right: 5),
               child: Column(
                 children: [
                   // ignore: prefer_const_constructors
