@@ -1,10 +1,10 @@
-import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:xconcordia/services/remote_service.dart';
 import 'package:flutter/material.dart';
 import 'package:xconcordia/views/secondScreen.dart';
 import 'package:xconcordia/widgets/categoryPicker.dart';
 import '../widgets/libraryCards.dart';
 import '../widgets/libraryStatsHeader.dart';
+import '../widgets/navBar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -24,11 +24,13 @@ String vannierLevel = '';
 
 class _HomePageState extends State<HomePage> {
   bool isLoading = true;
-  int currentIndex = 0;
+  int currentIndex = 1;
 
   // List of pages
   List<Widget> pages = [
     const HomePage(),
+    const SecondRoute(),
+    const SecondRoute(),
     const SecondRoute(),
   ];
   @override
@@ -144,9 +146,8 @@ class _HomePageState extends State<HomePage> {
       body: isLoading
           ? const Center(
               child: LinearProgressIndicator(
-                color: Color.fromARGB(162, 114, 68, 251),
-              ),
-            )
+              color: Color.fromARGB(162, 114, 68, 251),
+            ))
           : Container(
               margin: const EdgeInsets.only(top: 20),
               child: Column(
@@ -159,49 +160,7 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-      bottomNavigationBar: BottomNavyBar(
-        animationDuration: const Duration(milliseconds: 200),
-        curve: Curves.ease,
-        showElevation: false,
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        selectedIndex: currentIndex,
-        onItemSelected: (index) {
-          setState(() {
-            currentIndex = index;
-          });
-          // Push the new page onto the navigation stack
-          // Navigator.push(
-          //   context,
-          //   MaterialPageRoute(builder: (context) => pages[index]),
-          // );
-        },
-        items: <BottomNavyBarItem>[
-          BottomNavyBarItem(
-            activeColor: Colors.lightBlue,
-            textAlign: TextAlign.center,
-            icon: const Icon(Icons.home),
-            title: const Text('Home'),
-          ),
-          BottomNavyBarItem(
-            activeColor: Colors.lightBlue,
-            textAlign: TextAlign.center,
-            icon: const Icon(Icons.discord),
-            title: const Text('Discords'),
-          ),
-          BottomNavyBarItem(
-            activeColor: Colors.lightBlue,
-            textAlign: TextAlign.center,
-            icon: const Icon(Icons.school),
-            title: const Text('Examotron'),
-          ),
-          BottomNavyBarItem(
-            activeColor: Colors.lightBlue,
-            textAlign: TextAlign.center,
-            icon: const Icon(Icons.document_scanner),
-            title: const Text('Notes'),
-          ),
-        ],
-      ),
+      bottomNavigationBar: const navBar(),
     );
   }
 }

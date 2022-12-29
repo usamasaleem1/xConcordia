@@ -21,7 +21,7 @@ class categoryPicker extends StatelessWidget {
                 alignment: Alignment.centerLeft,
                 padding: const EdgeInsets.only(left: 20),
                 child: const Text(
-                  'Join a Random Class',
+                  'Crash a Class',
                   style: TextStyle(
                     fontSize: 26,
                     fontWeight: FontWeight.w800,
@@ -83,7 +83,7 @@ class categoryPicker extends StatelessWidget {
                   alignment: Alignment.centerLeft,
                   padding: const EdgeInsets.only(left: 10, top: 5),
                   child: OutlinedButton(
-                    onPressed: null,
+                    onPressed: () {},
                     style: ButtonStyle(
                       shape: MaterialStateProperty.all(RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30.0))),
@@ -95,7 +95,7 @@ class categoryPicker extends StatelessWidget {
                   alignment: Alignment.centerLeft,
                   padding: const EdgeInsets.only(left: 10, top: 5),
                   child: OutlinedButton(
-                    onPressed: null,
+                    onPressed: () {},
                     style: ButtonStyle(
                       shape: MaterialStateProperty.all(RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30.0))),
@@ -107,7 +107,7 @@ class categoryPicker extends StatelessWidget {
                   alignment: Alignment.centerLeft,
                   padding: const EdgeInsets.only(left: 10, top: 5),
                   child: OutlinedButton(
-                    onPressed: null,
+                    onPressed: () {},
                     style: ButtonStyle(
                       shape: MaterialStateProperty.all(RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30.0))),
@@ -119,7 +119,7 @@ class categoryPicker extends StatelessWidget {
                   alignment: Alignment.centerLeft,
                   padding: const EdgeInsets.only(left: 10, top: 5),
                   child: OutlinedButton(
-                    onPressed: null,
+                    onPressed: () {},
                     style: ButtonStyle(
                       overlayColor:
                           MaterialStateProperty.all(Colors.transparent),
@@ -141,7 +141,7 @@ class categoryPicker extends StatelessWidget {
               child: const Text(
                 'Feature Coming Soon.',
                 style: TextStyle(
-                  fontSize: 26,
+                  fontSize: 20,
                   color: Colors.blue,
                   fontWeight: FontWeight.w600,
                 ),
