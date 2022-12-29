@@ -53,7 +53,7 @@ class libCards extends StatelessWidget {
           decoration: BoxDecoration(
             boxShadow: const [
               BoxShadow(
-                color: Color.fromARGB(109, 255, 88, 11),
+                color: Color.fromARGB(150, 255, 88, 11),
                 offset: Offset(0, 5),
                 blurRadius: 15,
               ),
@@ -107,7 +107,7 @@ class libCards extends StatelessWidget {
           decoration: BoxDecoration(
             boxShadow: const [
               BoxShadow(
-                color: Color.fromARGB(120, 2, 83, 141),
+                color: Color.fromARGB(150, 2, 83, 141),
                 offset: Offset(0, 5),
                 blurRadius: 15,
               ),
@@ -161,7 +161,7 @@ class libCards extends StatelessWidget {
           decoration: BoxDecoration(
             boxShadow: const [
               BoxShadow(
-                color: Color.fromARGB(123, 20, 175, 64),
+                color: Color.fromARGB(150, 20, 175, 64),
                 offset: Offset(0, 5),
                 blurRadius: 15,
               ),

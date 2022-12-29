@@ -1,10 +1,8 @@
 import 'package:xconcordia/services/remote_service.dart';
 import 'package:flutter/material.dart';
-import 'package:xconcordia/views/secondScreen.dart';
 import 'package:xconcordia/widgets/categoryPicker.dart';
 import '../widgets/libraryCards.dart';
 import '../widgets/libraryStatsHeader.dart';
-import '../widgets/navBar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -23,16 +21,7 @@ String greyLevel = '';
 String vannierLevel = '';
 
 class _HomePageState extends State<HomePage> {
-  bool isLoading = true;
-  int currentIndex = 1;
-
-  // List of pages
-  List<Widget> pages = [
-    const HomePage(),
-    const SecondRoute(),
-    const SecondRoute(),
-    const SecondRoute(),
-  ];
+  bool isLoading = false;
   @override
   void initState() {
     super.initState();
@@ -59,7 +48,9 @@ class _HomePageState extends State<HomePage> {
         if (webOccupancy == '' || int.parse(webOccupancy) < 0) {
           webOccupancy = '0';
         }
-        if (int.parse(webOccupancy) > 100) {
+        if (int.parse(webOccupancy) == 0) {
+          webLevel = 'Empty';
+        } else if (int.parse(webOccupancy) > 100) {
           webLevel = 'High';
         } else if (int.parse(webOccupancy) > 75 &&
             int.parse(webOccupancy) < 100) {
@@ -80,7 +71,9 @@ class _HomePageState extends State<HomePage> {
         if (greyOccupancy == '' || int.parse(greyOccupancy) < 0) {
           greyOccupancy = '0';
         }
-        if (int.parse(greyOccupancy) > 100) {
+        if (int.parse(greyOccupancy) == 0) {
+          greyLevel = 'Empty';
+        } else if (int.parse(greyOccupancy) > 100) {
           greyLevel = 'High';
         } else if (int.parse(greyOccupancy) > 50 &&
             int.parse(greyOccupancy) < 100) {
@@ -101,7 +94,9 @@ class _HomePageState extends State<HomePage> {
         if (vannierOccupancy == '' || int.parse(vannierOccupancy) < 0) {
           vannierOccupancy = '0';
         }
-        if (int.parse(vannierOccupancy) > 100) {
+        if (int.parse(vannierOccupancy) == 0) {
+          vannierLevel = 'Empty';
+        } else if (int.parse(vannierOccupancy) > 100) {
           vannierLevel = 'High';
         } else if (int.parse(vannierOccupancy) > 50 &&
             int.parse(vannierOccupancy) < 100) {
@@ -117,32 +112,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        // elevation: 15,
-        // leading: IconButton(
-        //   icon: const Icon(Icons.menu),
-        //   onPressed: () {},
-        // ),
-
-        title: const Text('xConcordia'),
-        flexibleSpace: Container(
-          decoration: const BoxDecoration(
-            boxShadow: [
-              BoxShadow(
-                color: Color.fromARGB(223, 57, 25, 163),
-                offset: Offset(0, 0),
-                blurRadius: 20,
-              ),
-            ],
-            gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [Colors.blue, Colors.purple],
-            ),
-          ),
-        ),
-      ),
       body: isLoading
           ? const Center(
               child: LinearProgressIndicator(
@@ -160,7 +129,6 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-      bottomNavigationBar: const navBar(),
     );
   }
 }

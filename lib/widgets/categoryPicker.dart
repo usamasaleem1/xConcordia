@@ -1,6 +1,8 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
 
+Color textColor = const Color.fromARGB(255, 33, 36, 39);
+
 // ignore: camel_case_types
 class categoryPicker extends StatelessWidget {
   const categoryPicker({
@@ -25,7 +27,7 @@ class categoryPicker extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 26,
                     fontWeight: FontWeight.w800,
-                    color: Color.fromARGB(255, 103, 103, 103),
+                    color: Color.fromARGB(255, 33, 36, 39),
                   ),
                 ),
               ),
@@ -140,6 +142,7 @@ class categoryPicker extends StatelessWidget {
               padding: const EdgeInsets.only(left: 20, top: 10),
               child: const Text(
                 'Feature Coming Soon.',
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 20,
                   color: Colors.blue,

@@ -97,6 +97,7 @@ class getDataAPI_time {
     http.StreamedResponse response = await request.send();
 
     if (response.statusCode == 200) {
+      print('just accessed the API');
       String json = await response.stream.bytesToString();
       // ignore: await_only_futures
       Libraries library = await librariesFromJson(json);

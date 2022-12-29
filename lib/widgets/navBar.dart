@@ -1,9 +1,11 @@
 // ignore: file_names
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:xconcordia/views/examotronPage.dart';
+import 'package:xconcordia/views/notesPage.dart';
 
 import '../views/home_page.dart';
-import '../views/secondScreen.dart';
+import '../views/discordPage.dart';
 
 // ignore: camel_case_types
 class navBar extends StatefulWidget {
@@ -18,19 +20,45 @@ class _navBarState extends State<navBar> {
   int currentIndex = 0;
   final screens = [
     const HomePage(),
-    const SecondRoute(),
-    const SecondRoute(),
-    const SecondRoute(),
+    const DiscordPage(),
+    const ExamotronPage(),
+    const notesPage(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: screens.elementAt(currentIndex),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        // elevation: 15,
+        // leading: IconButton(
+        //   icon: const Icon(Icons.menu),
+        //   onPressed: () {},
+        // ),
+
+        title: const Text('xConcordia'),
+        flexibleSpace: Container(
+          decoration: const BoxDecoration(
+            boxShadow: [
+              BoxShadow(
+                color: Color.fromARGB(223, 57, 25, 163),
+                offset: Offset(0, 0),
+                blurRadius: 20,
+              ),
+            ],
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [Colors.blue, Colors.purple],
+            ),
+          ),
+        ),
+      ),
+      body: screens[currentIndex],
       bottomNavigationBar: BottomNavyBar(
         animationDuration: const Duration(milliseconds: 250),
         curve: Curves.ease,
-        showElevation: false,
+        showElevation: true,
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         selectedIndex: currentIndex,
         onItemSelected: (index) {

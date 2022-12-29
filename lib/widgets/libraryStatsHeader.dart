@@ -25,7 +25,7 @@ class LibraryStatsHeader extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 26,
                     fontWeight: FontWeight.w800,
-                    color: Color.fromARGB(255, 55, 55, 55),
+                    color: Color.fromARGB(255, 33, 36, 39),
                   ),
                 ),
               ),
