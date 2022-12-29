@@ -6,6 +6,8 @@ class libCards extends StatelessWidget {
   double width = 115;
   double cornerRadius = 35;
 
+  libCards({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Row(

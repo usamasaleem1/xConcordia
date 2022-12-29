@@ -25,7 +25,6 @@ class _navBarState extends State<navBar> {
 
   @override
   Widget build(BuildContext context) {
-    screens[currentIndex];
     return BottomNavyBar(
       animationDuration: const Duration(milliseconds: 250),
       curve: Curves.ease,
