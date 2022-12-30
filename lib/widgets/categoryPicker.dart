@@ -5,9 +5,7 @@ Color textColor = const Color.fromARGB(255, 33, 36, 39);
 
 // ignore: camel_case_types
 class categoryPicker extends StatelessWidget {
-  const categoryPicker({
-    Key? key,
-  }) : super(key: key);
+  const categoryPicker({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -135,22 +133,18 @@ class categoryPicker extends StatelessWidget {
             ),
           ),
         ),
-        Row(
-          children: [
-            Container(
-              alignment: Alignment.centerLeft,
-              padding: const EdgeInsets.only(left: 20, top: 10),
-              child: const Text(
-                'Feature Coming Soon.',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.blue,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
+        Container(
+          alignment: Alignment.centerLeft,
+          padding: const EdgeInsets.only(left: 20, top: 10),
+          child: const Text(
+            'Feature Coming Soon.',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.blue,
+              fontWeight: FontWeight.w600,
             ),
-          ],
+          ),
         ),
       ],
     );

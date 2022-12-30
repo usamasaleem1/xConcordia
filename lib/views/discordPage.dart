@@ -54,15 +54,18 @@ class DiscordPage extends StatelessWidget {
                     padding: const EdgeInsets.only(bottom: 15, top: 5),
                     child: OutlinedButton(
                       style: ButtonStyle(
-                          foregroundColor: MaterialStateProperty.all<Color>(
-                              const Color.fromARGB(255, 33, 36, 39)),
-                          minimumSize: MaterialStateProperty.all<Size>(
-                              const Size(200, 50)),
-                          shape: MaterialStateProperty.all<
-                                  RoundedRectangleBorder>(
-                              RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(28.0),
-                                  side: const BorderSide(color: Colors.red)))),
+                        foregroundColor: MaterialStateProperty.all<Color>(
+                            const Color.fromARGB(255, 33, 36, 39)),
+                        minimumSize: MaterialStateProperty.all<Size>(
+                            const Size(200, 50)),
+                        shape:
+                            MaterialStateProperty.all<RoundedRectangleBorder>(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(28.0),
+                            side: const BorderSide(color: Colors.red),
+                          ),
+                        ),
+                      ),
                       onPressed: () async {
                         // Open the link in the browser
                         Uri url = Uri.parse('https://discord.gg/concoengrcs');

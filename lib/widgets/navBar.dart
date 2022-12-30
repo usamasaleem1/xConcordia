@@ -63,11 +63,6 @@ class _navBarState extends State<navBar> {
           setState(() {
             currentIndex = index;
           });
-          // Push the new page onto the navigation stack
-          // Navigator.push(
-          //   context,
-          //   MaterialPageRoute(builder: (context) => pages[index]),
-          // );
         },
         items: <BottomNavyBarItem>[
           BottomNavyBarItem(
