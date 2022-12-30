@@ -47,7 +47,10 @@ class _navBarState extends State<navBar> {
             gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
-              colors: [Colors.blue, Colors.purple],
+              colors: [
+                Color.fromARGB(255, 46, 154, 243),
+                Color.fromARGB(255, 175, 67, 194)
+              ],
             ),
           ),
         ),

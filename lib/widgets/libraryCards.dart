@@ -59,10 +59,14 @@ class libCards extends StatelessWidget {
               ),
             ],
             borderRadius: BorderRadius.circular(cornerRadius),
+            border: Border.all(
+              color: const Color.fromARGB(55, 255, 255, 255),
+              width: 4,
+            ),
             gradient: const LinearGradient(
               colors: [
-                Color.fromARGB(255, 252, 151, 0),
-                Color.fromARGB(255, 245, 67, 55),
+                Color.fromARGB(255, 249, 174, 63),
+                Color.fromARGB(255, 245, 87, 55),
               ],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
@@ -113,9 +117,13 @@ class libCards extends StatelessWidget {
               ),
             ],
             borderRadius: BorderRadius.circular(cornerRadius),
+            border: Border.all(
+              color: const Color.fromARGB(55, 255, 255, 255),
+              width: 4,
+            ),
             gradient: const LinearGradient(
               colors: [
-                Color.fromARGB(255, 18, 179, 200),
+                Color.fromARGB(255, 34, 207, 230),
                 Color.fromARGB(255, 0, 95, 136),
               ],
               begin: Alignment.topLeft,
@@ -167,10 +175,14 @@ class libCards extends StatelessWidget {
               ),
             ],
             borderRadius: BorderRadius.circular(cornerRadius),
+            border: Border.all(
+              color: const Color.fromARGB(55, 255, 255, 255),
+              width: 4,
+            ),
             gradient: const LinearGradient(
               colors: [
-                Color.fromARGB(255, 25, 207, 159),
-                Color.fromARGB(255, 33, 147, 57)
+                Color.fromARGB(255, 44, 231, 181),
+                Color.fromARGB(255, 14, 148, 76)
               ],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,

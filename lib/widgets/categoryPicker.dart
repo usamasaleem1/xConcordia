@@ -141,7 +141,7 @@ class categoryPicker extends StatelessWidget {
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 20,
-              color: Colors.blue,
+              color: Color.fromARGB(102, 0, 0, 0),
               fontWeight: FontWeight.w600,
             ),
           ),
