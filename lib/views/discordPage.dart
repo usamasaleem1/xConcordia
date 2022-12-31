@@ -124,7 +124,7 @@ class DiscordPage extends StatelessWidget {
               alignment: Alignment.centerLeft,
               padding: const EdgeInsets.only(left: 20, top: 5),
               child: const Text(
-                'Student run. Student made. Student owned.',
+                'Find your department or faculty discord here!',
                 style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w400,
@@ -557,7 +557,7 @@ class DiscordPage extends StatelessWidget {
               alignment: Alignment.centerLeft,
               padding: const EdgeInsets.only(left: 20, top: 5),
               child: const Text(
-                'CSU Clubs & Student Associations',
+                'Join CSU Clubs & Student Associations',
                 style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w400,

@@ -296,7 +296,8 @@ class notesPage extends StatelessWidget {
                         // Open the link in the browser
                         Uri url = Uri.parse('https://hub.concordia.ca/');
                         if (await canLaunchUrl(url)) {
-                          await launchUrl(url);
+                          await launchUrl(url,
+                              mode: LaunchMode.externalApplication);
                         } else {
                           throw 'Could not launch $url';
                         }
