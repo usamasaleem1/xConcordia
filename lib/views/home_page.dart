@@ -21,7 +21,7 @@ String greyLevel = '';
 String vannierLevel = '';
 
 class _HomePageState extends State<HomePage> {
-  bool isLoading = true;
+  bool isLoading = false;
   @override
   void initState() {
     super.initState();
