@@ -21,7 +21,7 @@ String greyLevel = '';
 String vannierLevel = '';
 
 class _HomePageState extends State<HomePage> {
-  bool isLoading = false;
+  bool isLoading = true;
   @override
   void initState() {
     super.initState();
@@ -111,6 +111,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       body: isLoading
           ? const Center(

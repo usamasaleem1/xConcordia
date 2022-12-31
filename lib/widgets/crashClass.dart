@@ -42,7 +42,7 @@ class _crashClassState extends State<crashClass> {
   Widget build(BuildContext context) {
     while (isLoading) {
       return const Center(
-        child: CircularProgressIndicator(),
+        child: LinearProgressIndicator(),
       );
     }
     return Column(
