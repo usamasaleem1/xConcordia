@@ -13,15 +13,10 @@ class crashClass extends StatefulWidget {
   State<crashClass> createState() => _crashClassState();
 }
 
-void printTest() async {
-  String jsonString = await rootBundle.loadString('assets/classes.json');
-  final courses = coursesFromJson(jsonString);
-  print(courses[0].classEndTime.toString());
-}
 
 // ignore: camel_case_types
 class _crashClassState extends State<crashClass> {
-  late List<Courses> courses;
+  List<Courses> courses = [];
 
   @override
   void initState() {
@@ -36,18 +31,10 @@ class _crashClassState extends State<crashClass> {
 
   @override
   Widget build(BuildContext context) {
-    print(courses[0].classStatus.toString());
     return Column(
       // the title "Library Stats", and the last updated time, and live count text
       children: [
-        Text(
-          courses[0].classStatus.toString(),
-          style: const TextStyle(
-            fontSize: 26,
-            fontWeight: FontWeight.w800,
-            color: Color.fromARGB(255, 33, 36, 39),
-          ),
-        ),
+
         Container(
           padding: const EdgeInsets.only(top: 30),
           child: Row(
