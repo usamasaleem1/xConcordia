@@ -117,7 +117,8 @@ class _HomePageState extends State<HomePage> {
           ? const Center(
               child: LinearProgressIndicator(
               color: Color.fromARGB(162, 114, 68, 251),
-            ))
+              ),
+            )
           : Container(
               padding: const EdgeInsets.only(left: 0),
               margin: const EdgeInsets.only(top: 20, left: 5),
