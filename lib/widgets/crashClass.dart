@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:xconcordia/models/courses.dart';
 
-Color textColor = const Color.fromARGB(255, 33, 36, 39);
 
 // ignore: camel_case_types
 class crashClass extends StatefulWidget {
@@ -44,6 +43,7 @@ class _crashClassState extends State<crashClass> {
         child: CircularProgressIndicator(),
       );
     }
+
     return Column(
       // the title "Library Stats", and the last updated time, and live count text
       children: [
