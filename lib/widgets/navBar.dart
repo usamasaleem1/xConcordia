@@ -75,7 +75,7 @@ class _navBarState extends State<navBar> {
             activeColor: const Color.fromARGB(255, 5, 176, 255),
             textAlign: TextAlign.center,
             icon: const Icon(Icons.home),
-            title: const Text('Library'),
+            title: const Text('Home'),
           ),
           BottomNavyBarItem(
             inactiveColor: const Color.fromARGB(255, 20, 143, 199),

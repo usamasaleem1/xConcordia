@@ -2,9 +2,10 @@ import '../views/home_page.dart';
 import 'package:flutter/material.dart';
 
 class libCards extends StatelessWidget {
-  double height = 140;
-  double width = 115;
+  double height = 135;
+  double width = 110;
   double cornerRadius = 35;
+  double borderWidth = 2.5;
 
   libCards({Key? key}) : super(key: key);
 
@@ -61,7 +62,7 @@ class libCards extends StatelessWidget {
             borderRadius: BorderRadius.circular(cornerRadius),
             border: Border.all(
               color: const Color.fromARGB(55, 255, 255, 255),
-              width: 4,
+              width: borderWidth,
             ),
             gradient: const LinearGradient(
               colors: [
@@ -119,7 +120,7 @@ class libCards extends StatelessWidget {
             borderRadius: BorderRadius.circular(cornerRadius),
             border: Border.all(
               color: const Color.fromARGB(55, 255, 255, 255),
-              width: 4,
+              width: borderWidth,
             ),
             gradient: const LinearGradient(
               colors: [
@@ -177,7 +178,7 @@ class libCards extends StatelessWidget {
             borderRadius: BorderRadius.circular(cornerRadius),
             border: Border.all(
               color: const Color.fromARGB(55, 255, 255, 255),
-              width: 4,
+              width: borderWidth,
             ),
             gradient: const LinearGradient(
               colors: [

@@ -12,6 +12,7 @@ class LibraryStatsHeader extends StatefulWidget {
 }
 
 class _LibraryStatsHeaderState extends State<LibraryStatsHeader> {
+  
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -26,7 +27,7 @@ class _LibraryStatsHeaderState extends State<LibraryStatsHeader> {
                 alignment: Alignment.centerLeft,
                 padding: const EdgeInsets.only(left: 20),
                 child: const Text(
-                  'Library Stats 👥',
+                  'Library 📖',
                   style: TextStyle(
                     fontSize: 26,
                     fontWeight: FontWeight.w800,
