@@ -3,7 +3,7 @@
 
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:xconcordia/views/notesPage.dart';
+import 'package:xconcordia/views/linksPage.dart';
 
 import '../views/home_page.dart';
 import '../views/discordPage.dart';

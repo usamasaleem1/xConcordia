@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 class LibraryStatsHeader extends StatefulWidget {
   const LibraryStatsHeader({
     Key? key,
+    
   }) : super(key: key);
 
   @override
@@ -12,7 +13,6 @@ class LibraryStatsHeader extends StatefulWidget {
 }
 
 class _LibraryStatsHeaderState extends State<LibraryStatsHeader> {
-  
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -27,7 +27,7 @@ class _LibraryStatsHeaderState extends State<LibraryStatsHeader> {
                 alignment: Alignment.centerLeft,
                 padding: const EdgeInsets.only(left: 20),
                 child: const Text(
-                  'Library 📖',
+                  '📖 Library',
                   style: TextStyle(
                     fontSize: 26,
                     fontWeight: FontWeight.w800,
@@ -45,6 +45,22 @@ class _LibraryStatsHeaderState extends State<LibraryStatsHeader> {
                   ),
                 ),
               ),
+              Container(
+                padding: const EdgeInsets.only(left: 15),
+                //button to refresh the state
+                child: OutlinedButton(
+                  style: ButtonStyle(
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(28.0),
+                        side: const BorderSide(color: Colors.red),
+                      ),
+                    ),
+                  ),
+                  onPressed: () {},
+                  child: const Icon(Icons.refresh),
+                ),
+              )
             ],
           ),
         ),
@@ -89,5 +105,3 @@ class _LibraryStatsHeaderState extends State<LibraryStatsHeader> {
     );
   }
 }
-
-Future<void> _refreshProducts(BuildContext context) async {}

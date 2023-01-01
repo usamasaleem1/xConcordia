@@ -56,7 +56,7 @@ class _crashClassState extends State<crashClass> {
                 alignment: Alignment.centerLeft,
                 padding: const EdgeInsets.only(left: 20),
                 child: const Text(
-                  'Crash a Class 😈',
+                  '😈 Crash a Class',
                   style: TextStyle(
                     fontSize: 26,
                     fontWeight: FontWeight.w800,
@@ -230,11 +230,11 @@ class _crashClassState extends State<crashClass> {
           child: Container(
             alignment: Alignment.centerLeft,
             padding: const EdgeInsets.only(left: 20, top: 10),
-            child: Text(
-              'Science Visible: ' + courses[0].classEndTime.toString(),
+            child: const Text(
+              'Section will be visible when semester starts',
               textAlign: TextAlign.center,
-              style: const TextStyle(
-                fontSize: 20,
+              style: TextStyle(
+                fontSize: 15,
                 color: Color.fromARGB(102, 0, 0, 0),
                 fontWeight: FontWeight.w600,
               ),
@@ -279,7 +279,7 @@ class _crashClassState extends State<crashClass> {
             alignment: Alignment.centerLeft,
             padding: const EdgeInsets.only(left: 20, top: 10),
             child: Text(
-              'Music Visible: ' + courses[0].classEndTime.toString(),
+              'Music Visible: ' + courses[1].classEndTime.toString(),
               textAlign: TextAlign.center,
               style: const TextStyle(
                 fontSize: 20,
