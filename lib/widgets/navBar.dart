@@ -30,11 +30,15 @@ class _navBarState extends State<navBar> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
-        // elevation: 15,
-        // leading: IconButton(
-        //   icon: const Icon(Icons.menu),
-        //   onPressed: () {},
-        // ),
+        // dark mode button in app bar:
+        // actions: [
+        //   IconButton(
+        //     icon: const Icon(Icons.dark_mode),
+        //     onPressed: () {
+        //       toggleMode();
+        //     },
+        //   ),
+        // ],
 
         title: const Text('xConcordia'),
         flexibleSpace: Container(

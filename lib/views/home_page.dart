@@ -23,6 +23,7 @@ String greyLevel = '';
 String vannierLevel = '';
 
 class _HomePageState extends State<HomePage> {
+
   bool isLoading = false;
   @override
   void initState() {
@@ -116,6 +117,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
 
     return Scaffold(
+      
       body: isLoading
           ? const Center(
               child: LinearProgressIndicator(

@@ -30,7 +30,7 @@ class DiscordPage extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.w800,
-                          color: Color.fromARGB(255, 33, 36, 39),
+//      //                    color: Color.fromARGB(255, 33, 36, 39),
                         ),
                       ),
                     ),
@@ -59,8 +59,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15, top: 5),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                          foregroundColor: MaterialStateProperty.all<Color>(
-                              const Color.fromARGB(255, 33, 36, 39)),
+                          //                         foregroundColor: MaterialStateProperty.all<Color>(
+                          //                             const Color.fromARGB(255, 33, 36, 39)),
                           minimumSize: MaterialStateProperty.all<Size>(
                               const Size(200, 50)),
                           shape:
@@ -88,8 +88,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -121,7 +121,7 @@ class DiscordPage extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w800,
-                    color: Color.fromARGB(255, 33, 36, 39),
+//                    color: Color.fromARGB(255, 33, 36, 39),
                   ),
                 ),
               ),
@@ -146,8 +146,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15, top: 5),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -171,8 +171,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -196,8 +196,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -221,8 +221,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -246,8 +246,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -271,8 +271,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -296,8 +296,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -321,8 +321,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -346,8 +346,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -371,8 +371,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -396,8 +396,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -421,8 +421,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -446,8 +446,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -471,8 +471,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -496,8 +496,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -521,8 +521,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -554,7 +554,7 @@ class DiscordPage extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w800,
-                    color: Color.fromARGB(255, 33, 36, 39),
+//                    color: Color.fromARGB(255, 33, 36, 39),
                   ),
                 ),
               ),
@@ -579,8 +579,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15, top: 5),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                          foregroundColor: MaterialStateProperty.all<Color>(
-                              const Color.fromARGB(255, 33, 36, 39)),
+                          //                         foregroundColor: MaterialStateProperty.all<Color>(
+                          //                             const Color.fromARGB(255, 33, 36, 39)),
                           minimumSize: MaterialStateProperty.all<Size>(
                               const Size(200, 50)),
                           shape:
@@ -607,8 +607,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -632,8 +632,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -657,8 +657,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -682,8 +682,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -707,8 +707,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -732,8 +732,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -757,8 +757,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -782,8 +782,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -807,8 +807,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -832,8 +832,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -857,8 +857,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -882,8 +882,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -907,8 +907,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -932,8 +932,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<
@@ -957,8 +957,8 @@ class DiscordPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 15),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+//                            foregroundColor: MaterialStateProperty.all<Color>(
+//                               const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(200, 50)),
                             shape: MaterialStateProperty.all<

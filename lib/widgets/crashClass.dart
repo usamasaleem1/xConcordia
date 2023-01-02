@@ -4,6 +4,84 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:xconcordia/models/courses.dart';
 
+class crashClassesCards extends StatelessWidget {
+  const crashClassesCards({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    double height = 10;
+    double width = 10;
+    double cornerRadius = 20;
+    var borderWidth = 2.5;
+    return Row(
+      //the webster, grey, vannier square cards
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Container(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: const [
+              Text(
+                'Webster',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              Text(
+                'test1',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.w200,
+                  color: Color.fromARGB(255, 255, 255, 255),
+                ),
+              ),
+              Text(
+                'test2',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(170, 255, 255, 255),
+                ),
+              ),
+            ],
+          ),
+          height: height,
+          width: width,
+          decoration: BoxDecoration(
+            boxShadow: const [
+              BoxShadow(
+                color: Color.fromARGB(150, 255, 88, 11),
+                offset: Offset(0, 5),
+                blurRadius: 15,
+              ),
+            ],
+            borderRadius: BorderRadius.circular(cornerRadius),
+            border: Border.all(
+              color: const Color.fromARGB(55, 255, 255, 255),
+              width: borderWidth,
+            ),
+            gradient: const LinearGradient(
+              colors: [
+                Color.fromARGB(255, 249, 174, 63),
+                Color.fromARGB(255, 245, 87, 55),
+              ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+
 
 // ignore: camel_case_types
 class crashClass extends StatefulWidget {
@@ -60,7 +138,7 @@ class _crashClassState extends State<crashClass> {
                   style: TextStyle(
                     fontSize: 26,
                     fontWeight: FontWeight.w800,
-                    color: Color.fromARGB(255, 33, 36, 39),
+                    // color: Color.fromARGB(255, 33, 36, 39),
                   ),
                 ),
               ),
@@ -69,7 +147,8 @@ class _crashClassState extends State<crashClass> {
         ),
         Container(
           alignment: Alignment.centerLeft,
-          padding: const EdgeInsets.only(left: 20, top: 5, right: 20),
+          padding:
+              const EdgeInsets.only(left: 20, top: 5, right: 20, bottom: 3),
           child: const Text(
             'Bored on break? Join a random class happening live!',
             style: TextStyle(
@@ -115,12 +194,12 @@ class _crashClassState extends State<crashClass> {
                   padding: const EdgeInsets.only(left: 10, top: 5),
                   child: OutlinedButton(
                     onPressed: () {
-                      setState(() {
-                        scienceVis = false;
-                        codingVis = true;
-                        artVis = false;
-                        musicVis = false;
-                      });
+                      // setState(() {
+                      //   scienceVis = false;
+                      //   codingVis = true;
+                      //   artVis = false;
+                      //   musicVis = false;
+                      // });
                     },
                     style: OutlinedButton.styleFrom(
                       shape: RoundedRectangleBorder(
@@ -141,12 +220,12 @@ class _crashClassState extends State<crashClass> {
                   padding: const EdgeInsets.only(left: 10, top: 5),
                   child: OutlinedButton(
                     onPressed: () {
-                      setState(() {
-                        scienceVis = false;
-                        codingVis = false;
-                        artVis = true;
-                        musicVis = false;
-                      });
+                      // setState(() {
+                      //   scienceVis = false;
+                      //   codingVis = false;
+                      //   artVis = true;
+                      //   musicVis = false;
+                      // });
                     },
                     style: OutlinedButton.styleFrom(
                       shape: RoundedRectangleBorder(
@@ -167,12 +246,12 @@ class _crashClassState extends State<crashClass> {
                   padding: const EdgeInsets.only(left: 10, top: 5),
                   child: OutlinedButton(
                     onPressed: () {
-                      setState(() {
-                        scienceVis = false;
-                        codingVis = false;
-                        artVis = false;
-                        musicVis = true;
-                      });
+                      // setState(() {
+                      //   scienceVis = false;
+                      //   codingVis = false;
+                      //   artVis = false;
+                      //   musicVis = true;
+                      // });
                     },
                     style: OutlinedButton.styleFrom(
                       shape: RoundedRectangleBorder(
@@ -231,11 +310,11 @@ class _crashClassState extends State<crashClass> {
             alignment: Alignment.centerLeft,
             padding: const EdgeInsets.only(left: 20, top: 10),
             child: const Text(
-              'Section will be visible when semester starts',
+              'This feature will come in a future update!',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 15,
-                color: Color.fromARGB(102, 0, 0, 0),
+                // color: Color.fromARGB(102, 0, 0, 0),
                 fontWeight: FontWeight.w600,
               ),
             ),
@@ -251,7 +330,7 @@ class _crashClassState extends State<crashClass> {
               textAlign: TextAlign.center,
               style: const TextStyle(
                 fontSize: 20,
-                color: Color.fromARGB(102, 0, 0, 0),
+                //  color: Color.fromARGB(102, 0, 0, 0),
                 fontWeight: FontWeight.w600,
               ),
             ),
@@ -267,7 +346,7 @@ class _crashClassState extends State<crashClass> {
               textAlign: TextAlign.center,
               style: const TextStyle(
                 fontSize: 20,
-                color: Color.fromARGB(102, 0, 0, 0),
+                //  color: Color.fromARGB(102, 0, 0, 0),
                 fontWeight: FontWeight.w600,
               ),
             ),
@@ -275,19 +354,7 @@ class _crashClassState extends State<crashClass> {
         ),
         Visibility(
           visible: musicVis,
-          child: Container(
-            alignment: Alignment.centerLeft,
-            padding: const EdgeInsets.only(left: 20, top: 10),
-            child: Text(
-              'Music Visible: ' + courses[1].classEndTime.toString(),
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                fontSize: 20,
-                color: Color.fromARGB(102, 0, 0, 0),
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-          ),
+          child: const crashClassesCards(),
         ),
       ],
     );

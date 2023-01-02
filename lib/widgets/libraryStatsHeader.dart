@@ -31,7 +31,7 @@ class _LibraryStatsHeaderState extends State<LibraryStatsHeader> {
                   style: TextStyle(
                     fontSize: 26,
                     fontWeight: FontWeight.w800,
-                    color: Color.fromARGB(255, 33, 36, 39),
+                    // color: Color.fromARGB(255, 33, 36, 39),
                   ),
                 ),
               ),
@@ -68,7 +68,7 @@ class _LibraryStatsHeaderState extends State<LibraryStatsHeader> {
           children: [
             Container(
               alignment: Alignment.centerLeft,
-              padding: const EdgeInsets.only(left: 20, top: 5),
+              padding: const EdgeInsets.only(left: 20, top: 0),
               child: const Text(
                 'Live count of the number of people',
                 style: TextStyle(
@@ -77,28 +77,7 @@ class _LibraryStatsHeaderState extends State<LibraryStatsHeader> {
                 ),
               ),
             ),
-            Container(
-              alignment: Alignment.centerLeft,
-              padding: const EdgeInsets.only(left: 20, top: 5),
-              //button to refresh the state
-              // child: OutlinedButton(
-              //   style: ButtonStyle(
-              //     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-              //       RoundedRectangleBorder(
-              //         borderRadius: BorderRadius.circular(28.0),
-              //         side: const BorderSide(color: Colors.red),
-              //       ),
-              //     ),
-              //   ),
-              //   onPressed: () {
-              //     setState(() {
-              //       onRefresh:
-              //       () => _refreshProducts(context);
-              //     });
-              //   },
-              //   child: const Icon(Icons.refresh),
-              // ),
-            ),
+
           ],
         ),
       ],

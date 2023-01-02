@@ -30,7 +30,7 @@ class notesPage extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w800,
-                          color: Color.fromARGB(255, 33, 36, 39),
+                          //                    color: Color.fromARGB(255, 33, 36, 39),
                         ),
                       ),
                     ),
@@ -58,8 +58,8 @@ class notesPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 5),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+                            //foregroundColor: MaterialStateProperty.all<Color>(
+//                                const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(150, 40)),
                             shape: MaterialStateProperty.all<
@@ -91,7 +91,7 @@ class notesPage extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w800,
-                    color: Color.fromARGB(255, 33, 36, 39),
+//                    color: Color.fromARGB(255, 33, 36, 39),
                   ),
                 ),
               ),
@@ -116,8 +116,8 @@ class notesPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 5, top: 5),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+                            //foregroundColor: MaterialStateProperty.all<Color>(
+//                                const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(150, 40)),
                             shape: MaterialStateProperty.all<
@@ -149,7 +149,7 @@ class notesPage extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w800,
-                    color: Color.fromARGB(255, 33, 36, 39),
+//                    color: Color.fromARGB(255, 33, 36, 39),
                   ),
                 ),
               ),
@@ -174,8 +174,8 @@ class notesPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 5, top: 5),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+                            //foregroundColor: MaterialStateProperty.all<Color>(
+//                                const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(150, 40)),
                             shape: MaterialStateProperty.all<
@@ -208,7 +208,7 @@ class notesPage extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w800,
-                    color: Color.fromARGB(255, 33, 36, 39),
+//                    color: Color.fromARGB(255, 33, 36, 39),
                   ),
                 ),
               ),
@@ -233,8 +233,8 @@ class notesPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 5, top: 5),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+                            //foregroundColor: MaterialStateProperty.all<Color>(
+//                                const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(150, 40)),
                             shape: MaterialStateProperty.all<
@@ -267,7 +267,7 @@ class notesPage extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w800,
-                    color: Color.fromARGB(255, 33, 36, 39),
+//                    color: Color.fromARGB(255, 33, 36, 39),
                   ),
                 ),
               ),
@@ -292,8 +292,8 @@ class notesPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 5, top: 5),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+                            //foregroundColor: MaterialStateProperty.all<Color>(
+//                                const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(150, 40)),
                             shape: MaterialStateProperty.all<
@@ -326,7 +326,7 @@ class notesPage extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w800,
-                    color: Color.fromARGB(255, 33, 36, 39),
+//                    color: Color.fromARGB(255, 33, 36, 39),
                   ),
                 ),
               ),
@@ -351,8 +351,8 @@ class notesPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 5, top: 5),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+                            //foregroundColor: MaterialStateProperty.all<Color>(
+//                                const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(150, 40)),
                             shape: MaterialStateProperty.all<
@@ -386,7 +386,7 @@ class notesPage extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w800,
-                    color: Color.fromARGB(255, 33, 36, 39),
+//                    color: Color.fromARGB(255, 33, 36, 39),
                   ),
                 ),
               ),
@@ -411,8 +411,8 @@ class notesPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 5, top: 5),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+                            //foregroundColor: MaterialStateProperty.all<Color>(
+//                                const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(150, 40)),
                             shape: MaterialStateProperty.all<
@@ -446,7 +446,7 @@ class notesPage extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w800,
-                    color: Color.fromARGB(255, 33, 36, 39),
+//                    color: Color.fromARGB(255, 33, 36, 39),
                   ),
                 ),
               ),
@@ -471,8 +471,8 @@ class notesPage extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 5, top: 5),
                       child: OutlinedButton(
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 33, 36, 39)),
+                            //foregroundColor: MaterialStateProperty.all<Color>(
+//                                const Color.fromARGB(255, 33, 36, 39)),
                             minimumSize: MaterialStateProperty.all<Size>(
                                 const Size(150, 40)),
                             shape: MaterialStateProperty.all<
