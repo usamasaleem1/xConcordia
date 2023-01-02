@@ -124,17 +124,19 @@ class _HomePageState extends State<HomePage> {
               color: Color.fromARGB(162, 114, 68, 251),
               ),
             )
-          : Container(
-              padding: const EdgeInsets.only(left: 0),
-              margin: const EdgeInsets.only(top: 20, left: 5),
-              child: Column(
-                children: [
-                  // ignore: prefer_const_constructors
-                  LibraryStatsHeader(),
-                  const Padding(padding: EdgeInsets.all(10)),
-                  libCards(), //libCards widget is in a file called libraryCards
-                  const crashClass(), //category picker
-                ],
+          : SingleChildScrollView(
+              child: Container(
+                padding: const EdgeInsets.only(left: 0),
+                margin: const EdgeInsets.only(top: 20, left: 5),
+                child: Column(
+                  children: [
+                    // ignore: prefer_const_constructors
+                    LibraryStatsHeader(),
+                    const Padding(padding: EdgeInsets.all(10)),
+                    libCards(), //libCards widget is in a file called libraryCards
+                    const crashClass(), //category picker
+                  ],
+                ),
               ),
             ),
     );
