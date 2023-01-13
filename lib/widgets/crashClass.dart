@@ -44,7 +44,7 @@ class _crashClassState extends State<crashClass> {
   Widget build(BuildContext context) {
     while (isLoading) {
       return const Center(
-        child: CircularProgressIndicator(),
+          // child: CircularProgressIndicator(),
       );
     }
 
@@ -172,12 +172,12 @@ class _crashClassState extends State<crashClass> {
                   padding: const EdgeInsets.only(left: 10, top: 5),
                   child: OutlinedButton(
                     onPressed: () {
-                      setState(() {
-                        scienceVis = false;
-                        codingVis = false;
-                        artVis = false;
-                        musicVis = true;
-                      });
+                      // setState(() {
+                      //   scienceVis = false;
+                      //   codingVis = false;
+                      //   artVis = false;
+                      //   musicVis = true;
+                      // });
                     },
                     style: OutlinedButton.styleFrom(
                       shape: RoundedRectangleBorder(

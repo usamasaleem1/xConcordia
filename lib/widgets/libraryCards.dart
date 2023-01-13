@@ -11,6 +11,7 @@ class libCards extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     return Row(
       //the webster, grey, vannier square cards
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -29,6 +30,12 @@ class libCards extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
+              if (webOccupancy == '')
+                const LinearProgressIndicator(
+                  color: Color.fromARGB(160, 255, 255, 255),
+                  minHeight: 2,
+                )
+              else
               Text(
                 webOccupancy,
                 textAlign: TextAlign.center,
@@ -87,6 +94,12 @@ class libCards extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
+              if (greyLevel == '')
+                const LinearProgressIndicator(
+                  color: Color.fromARGB(160, 255, 255, 255),
+                  minHeight: 2,
+                )
+              else
               Text(
                 greyOccupancy,
                 textAlign: TextAlign.center,
@@ -145,6 +158,12 @@ class libCards extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
+              if (vannierLevel == '')
+                const LinearProgressIndicator(
+                  color: Color.fromARGB(160, 255, 255, 255),
+                  minHeight: 2,
+                )
+              else
               Text(
                 vannierOccupancy,
                 textAlign: TextAlign.center,
